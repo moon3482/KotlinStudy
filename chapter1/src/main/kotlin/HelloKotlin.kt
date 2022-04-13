@@ -1,3 +1,3 @@
-fun main() {
-    print("Hello Charlie!!")
+fun main(args: Array<String>) {
+  print("Hello Charlie!!")
 }
