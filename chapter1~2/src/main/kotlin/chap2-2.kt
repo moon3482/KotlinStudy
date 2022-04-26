@@ -1,3 +1,5 @@
+//자료형에 별명 붙이기
+typealias Username = String
 fun main() {
 
     var number = 10
@@ -74,7 +76,36 @@ fun main() {
     //문자자료형은 '로 감싸준다.
     val cChar = 'C'
     val chaCha:Char
+    //컴퓨터는 char를 숫자로 인식하여 아스키코드기준으로 출력
+    println(cChar+1) //D 출력
+    //Int to Char
+    val code:Int = 65
+    val charCode = code.toChar();
+    println(charCode) //A 출력
+    //Char는 문자 1개만 할당가능
 
+    //이스케이프 문자사용
+    val str = "My name is \"Charlie_Moon\"!!!"
+    println(str)
+    val str2 = "My name is ${'"'}Charlie_Moon${'"'}!!!"
+    println(str2)
+
+    //형식화된 문자열 표현하기
+    val script = """
+        ???: 안녕?        하하하
+        ???2: 안녕~
+        ???: 내 이름은 찰리 라고해
+        ???2: 내 이름은 ???2 라고해
+        ???: ??? 이름이 뭐라고???
+    """.trimIndent()
+    println(script)
+
+    //자료형 별명 붙이기
+    val user: Username = "Charlie"
+    val user2: String = "Charlie"
+    println(user)
+    println(user2)
 
 
 }
+
